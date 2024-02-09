@@ -20,7 +20,7 @@ public class dashboardController
 {
     @Autowired
     dashboardService service;
-    @Value("${project.image}")
+   
     private String path;
     @PostMapping("/addBlogs")
     public ResponseEntity<?> addB(@RequestBody  dashboardModel model)
@@ -33,18 +33,8 @@ public class dashboardController
     {
         return new ResponseEntity<>(service.showBlogs(), HttpStatus.OK);
     }
-    @PostMapping("/upload")
-    public ResponseEntity<tempResponse> fileUpload(@RequestParam("image") MultipartFile image) {
-        String fileName=null;
-        try{
-            fileName=this.service.uploadImage(path,image);
-        }catch(IOException e)
-        {
-            e.printStackTrace();
-            return new ResponseEntity<>(new tempResponse(null,"Image is not uploaded"),HttpStatus.CONFLICT);
-        }
-        return new ResponseEntity<>(new tempResponse(fileName,"Image is successfully uploaded"),HttpStatus.OK);
-    }
+    
+
     @PostMapping("/addComment")
     public ResponseEntity<?> addC(@RequestBody comment com)
     {

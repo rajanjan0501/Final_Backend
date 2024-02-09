@@ -11,7 +11,6 @@ import java.util.List;
 public interface dashboardServiceInterface {
     public dashboardModel addBlog(dashboardModel model);
     public List<dashboardModel> showBlogs();
-    String uploadImage(String path , MultipartFile file) throws IOException;
 
     public comment addComm(comment com);
 

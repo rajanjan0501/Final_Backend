@@ -32,20 +32,7 @@ public class dashboardService implements dashboardServiceInterface {
         return repo.findAll();
     }
 
-    @Override
-    public String uploadImage(String path, MultipartFile file) throws IOException {
-        String name=file.getOriginalFilename();
-        String randomId= UUID.randomUUID().toString();
-        String fileName=randomId.concat(name.substring(name.lastIndexOf(".")));
-        String filePath=path+ File.separator+fileName;
-        File filee=new File(path);
-        if(!filee.exists())
-        {
-            filee.mkdir();
-        }
-        Files.copy(file.getInputStream(), Paths.get(filePath));
-        return name;
-    }
+   
 
     @Override
     public comment addComm(comment com) {
