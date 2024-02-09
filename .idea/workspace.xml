@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90918fdd-4fcf-4232-ab99-7e6151283bdd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -42,7 +40,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/ubuntu/Desktop/frontend/wod/blogsApp",
+    "last_opened_file_path": "/home/ubuntu/Downloads/backend-mong",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
